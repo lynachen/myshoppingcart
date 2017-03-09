@@ -89,7 +89,7 @@ html {
 }
 
 .nav-left .nav-msg:hover{
-	cursor:auto;     /*不是默认的光标形状*/
+	cursor:auto;     
 }
 .nav-right .nav-myTao:hover,.nav-right .nav-cart:hover,.nav-right .nav-collection:hover,.nav-right .nav-list:hover,.nav-right .nav-sellCenter:hover,.nav-right .nav-contact:hover,.nav-right .nav-web:hover{
   color: #ff3e00;
@@ -125,7 +125,7 @@ html {
 
 .nav-left a.nav-logo::before{
 	content:url("images/taobao-logo.png");
-	margin-left:0;    /*无法跟下面的图片对齐*/
+	margin-left:0;
 }
 .nav-left a.nav-msg::before {
   content: url("images/msg-red.png");
@@ -280,9 +280,6 @@ html {
   margin-left: 20px;
   background-color: #e8e8e8;
 }
-/*.btn-switch-href span.pipe.pipe-display {
-  display: none;
-}这个可以省省略的*/
 
 .btn-switch-color {
   color: #3c3c3c;
@@ -595,42 +592,7 @@ html {
   position: relative;
   z-index: 1;
 }
-/*
-.commodityInfo .item-amount .reduce,
-.commodityInfo .item-amount input,
-.commodityInfo .item-amount .add{
-  float:left;
- 
-  position:relative;
-  z-index:0;
-  height:23px;
-  width:17px;
-  border:1px solid #e5e5e5;
-  background-color:#f0f0f0;
-  text-align:center;
-  line-height:23px;
-  font-size: 14px;
-  color:#444;
-}
-.commodityInfo .item-amount .reduce:hover,
-.commodityInfo .item-amount .add:hover{
-	color:#f50;
-	z-index:3;
-	border-color:#f60;
-	cursor:pointer;
-}
-.commodityInfo .item-amount input,{
-  width:39px;
-  height:15px;
-  line-height:15px;
-  border:1px solid #aaa;
-  color:#343434;
-  text-align:center;
-  padding:4px 1px;
-  margin-left:18px;
-  background-color:#fff;
-  z-index:2;
-}*/
+
 .commodityInfo .item-amount span {
   display: inline-block;
   height: 23px;
@@ -671,23 +633,7 @@ html {
   background-color:#fff;
   z-index:2;
 }
-/*.commodityInfo .item-amount .add {
-  border-left-color:#aaa;
-}
-.commodityInfo .item-amount .reduce {
-  border-right-color:#aaa;
-/*.commodityInfo .item-amount .reduce,
-.commodityInfo .item-amount input,
-.commodityInfo .item-amount .add{float:left;margin-right:-1px;position:relative;z-index:0;}
 
-.commodityInfo .item-amount .reduce,
-.commodityInfo .item-amount .add{height:23px;width:17px;border:1px solid #e5e5e5;background:#f0f0f0;text-align:center;line-height:23px;color:#444;}
-
-.commodityInfo .item-amount .reduce:hover,
-.commodityInfo .item-amount .add:hover{color:#f50;z-index:3;border-color:#f60;cursor:pointer;}
-
-.commodityInfo .item-amount input,{width:50px;height:15px;line-height:15px;border:1px solid #aaa;color:#343434;text-align:center;padding:4px 0;background-color:#fff;z-index:2;}
-*/
 
 .commodityInfo .td-sum {
   min-height: 79px;
@@ -858,7 +804,7 @@ html {
 }
 #selectedViewList div span{
 	display:none;
-	color:#ffffff;
+	color:#fff;
 	font-size:12px;
 	position:absolute;
 	top:0px;
