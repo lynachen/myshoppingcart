@@ -3,6 +3,4 @@
 
 模仿淘宝购物车
 
-页面截图如下：
-
-![mytaobao](css/images/mytaobao.png)
+查看静态页面请点击：https://lynachen.github.io/myshoppingcart/myshoppingcart.html
