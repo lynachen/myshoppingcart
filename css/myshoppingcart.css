@@ -1,4 +1,4 @@
-body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,,dd,input{
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
 margin:0;
 padding:0;
 }
@@ -28,18 +28,18 @@ display:block;
 clear:both;
 }
 .clearfix{
-zoom:1;
+*zoom:1;
 }
 
 /*选择*/
 ::selection{
 background-color:#669900;
-color:#ffffff;
+color:#fff;
 text-shadow:none;
 }
 ::moz-selection{
 background-color:#669900;
-color:#ffffff;
+color:#fff;
 text-shadow:none;
 }
 
@@ -462,7 +462,7 @@ html {
 }
 
 .commodityInfo .eastpakBag,.commodityInfo .dimansijiafang,.commodityInfo .xinyixincandian,.commodityInfo .zhangjunya {
-  display: inline-block; /*图片的位置*/
+  display: inline-block; 
   float: left;
 }
 
@@ -536,8 +536,6 @@ html {
   line-height: 23px;
   width: 65px;
   border: 1px solid #FFE1D3;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   text-align: center;
   background-color: #FFF0E7;
@@ -568,8 +566,6 @@ html {
   background-color: #fff;
   display: none;
   position: absolute;
-  -moz-box-shadow: 2px 2px 3px #f4f4f4;
-  -webkit-box-shadow: 2px 2px 3px #f4f4f4;
   box-shadow: 2px 2px 3px #f4f4f4;
 }
 
@@ -581,7 +577,6 @@ html {
   padding-bottom: 4px;
 }
 
-.commodityInfo .
 .commodityInfo .td-amount {
   min-height: 79px;
 }
