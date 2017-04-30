@@ -21,7 +21,7 @@ a{
 text-decoration:none;
 }
 
-/*清除浮动*/
+
 .clearfix:after{
 content:"";
 display:block;
@@ -31,7 +31,7 @@ clear:both;
 *zoom:1;
 }
 
-/*选择*/
+
 ::selection{
 background-color:#669900;
 color:#fff;
@@ -43,7 +43,7 @@ color:#fff;
 text-shadow:none;
 }
 
-/*去掉a的下划线*/
+
 a{
 blr:expression(this,onFocus=this.blur())
 }/*if IE*/
