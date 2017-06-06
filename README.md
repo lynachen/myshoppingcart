@@ -1,6 +1,6 @@
 # myshoppingcart(仿淘宝购物车页面)
 
-[演示链接](http://htmlpreview.github.io/?https://github.com/lynachen/myshoppingcart/blob/master/myshoppingcart.html)
+[演示链接](http://htmlpreview.github.io/?https://github.com/lynachen/myshoppingcart/myshoppingcart.html)
 
 
 # 总体思路：
