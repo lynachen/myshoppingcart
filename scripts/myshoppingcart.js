@@ -116,5 +116,6 @@ $(function(){
 			$(".total-sum").text(oprice.toFixed(2));
 		});
 	};
+	TotalPrice();
 
 });
