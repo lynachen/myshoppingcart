@@ -117,5 +117,15 @@ $(function(){
 		});
 	};
 	TotalPrice();
+	//判断是否删除商品
+	$(".delete").click(function(){
+		var confirm_ = confirm("确定要删除该宝贝吗？");
+		if (confirm_) {
+			return true;
+		} else {
+			return false;
+		}
+
+	});	
 
 });
