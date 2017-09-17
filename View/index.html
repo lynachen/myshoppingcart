@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../Public/components/bootstrap/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="../Public/css/index.css">
+	<script src="../Public/components/jQuery/js/jquery.min.js"></script>
+	<script src="../Public/components/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../Public/js/index.js"></script>
+</head>
+<body>
+	<div class="site-nav">
+		<div class="container nav">
+			<ul class="nav-left">
+				<li><a href="#" class="nav-logo"></a></li>
+				<li><a href="#" class="nav-account">July</a></li>
+				<li><a href="#" class="nav-msg">消息</a></li>
+			</ul>
+			<ul class="nav-right">
+				<li class="nav_myTao">
+					<a href="#" class="nav-myTao">我的淘宝</a>
+					<ul class="nav-shopcart-nav">
+						<a href="#">已买到的宝贝</a>
+						<a href="#">我的足迹</a>
+						<a href="#">爱逛街</a>
+						<a href="#">淘宝达人</a>
+						<a href="#">新欢</a>
+						<a href="#" class="">查看我的淘宝</a>
+					</ul>
+				</li>
+				<li><a href="#" class="nav-cart">购物车</a></li>
+				<li class="nav_collection">
+					<a href="#" class="nav-collection">收藏夹</a>
+					<ul class="nav-shopcart-nav">
+						<a href="#">收藏的宝贝</a>
+						<a href="#">收藏的店铺</a>
+					</ul>
+				</li>
+				<li><a href="#" class="nav-list">商品分类</a></li>
+				<li class="nav_sellCenter">
+					<a href="#" class="nav-sellCenter">卖家中心</a>
+					<ul class="nav-shopcart-nav">
+						<a href="#">免费开店</a>
+						<a href="#">已卖出的宝贝</a>
+						<a href="#">出售中的宝贝</a>
+						<a href="#">卖家服务市场</a>
+						<a href="#">卖家培训中心</a>
+					</ul>
+				</li>
+				<li class="nav_contact">
+					<a href="#" class="nav-contact">联系客服</a>
+					<ul class="nav-shopcart-nav"><a href="#">消费者客服</a><a href="#">卖家客服</a></ul>
+				</li>
+				<li><a href="#" class="nav-web">网站导航</a></li>
+			</ul>					
+		</div>
+	</div>
+	<div class="container header">
+		<a href="#"></a>
+		<div class="header-search">
+			<input type="text" class="header-search-text" />
+			<input type="button" value="搜 索" class="header-search-btn" />
+		</div>
+	</div>
+	<div class="container cart-title">
+		<h2>我的购物车</h2>
+		<!-- <p class="divider"></p> -->
+	</div>
+	<div class="container cart-main">
+		<div class="cart-head">
+			<ul class="cart-list cart-top list-inline">
+				<li class="list-chk">
+					<input type="checkbox" id="checkAll" class="check-all" />
+					<label for="checkAll" class="c6">全选</label>
+				</li>
+				<li class="list-msg">商品</li>
+				<li class="list-amount">数量</li>
+				<li class="list-price">单价</li>
+				<li class="list-sum">总价</li>
+				<li class="list-operation">操作</li>
+			</ul>
+		</div>
+		<div class="cart-box">
+			<div class="shop-info">
+				<div class="all-check">
+					<input type="checkbox" id="shop0" class="shop-check" />
+					<label for="shop0">
+						<img src="../Public/images/tianmao-icon.png" />
+						店铺：
+					</label>
+					<a href="#">eastpak旗舰店</a>
+				</div>
+				<div class="shop-name"></div>
+			</div>
+			<div class="cart-content">
+				<ul class="cart-list">
+					<li class="list-chk">
+						<input type="checkbox" id="checkBox0" class="goods-check" style="display: inline-block;" />
+					</li>
+					<li class="list-msg">
+						<div class="list-img">
+							<a href="javascript:;">
+								<img src="../Public/images/eastpak2.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-des">
+							<p class="p-info">
+								<a href="javascript:;">EASTPAK2016依斯柏新品背包 迷你时尚儿童双肩包 潮流小学生书包</a>
+							</p>
+							<p class="p-type">型号：EK043363</p>
+							<p class="p-color">颜色：灰色</p>
+						</div>
+					</li>
+					<li class="list-amount">
+						<div class="amount-box">
+							<a href="javascript:;" class="reduce reSty">-</a>
+							<input type="text" value="1" class="sum">
+							<a href="javascript:;" class="add">+</a>
+						</div>						 
+					</li>
+					<li class="list-price">
+						<p class="non-discount">￥430.00</p>
+						<p class="price">￥269.00</p>
+					</li>
+					<li class="list-sum"><p class="sum-price">￥269.00</p></li>
+					<li class="list-operation">
+						<div class="btn-operation">
+							<a href="javascript:;" class="btn-del">删除</a>
+							<a href="javascript:;" class="btn-col">收藏</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="cart-list">
+					<li class="list-chk">
+						<input type="checkbox" id="checkBox1" class="goods-check" style="display: inline-block;" />
+					</li>
+					<li class="list-msg">
+						<div class="list-img">
+							<a href="javascript:;">
+								<img src="../Public/images/eastpak.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-des">
+							<p class="p-info">
+								<a href="javascript:;">EASTPAK2016依斯柏新品背包 迷你时尚儿童双肩包 潮流小学生书包</a>
+							</p>
+							<p class="p-type">型号：EK04329M</p>
+							<p class="p-color">颜色：花色</p>
+						</div>
+					</li>
+					<li class="list-amount">
+						<div class="amount-box">
+							<a href="javascript:;" class="reduce reSty">-</a>
+							<input type="text" value="1" class="sum">
+							<a href="javascript:;" class="add">+</a>
+						</div>						
+					</li>
+					<li class="list-price">
+						<p class="non-discount">￥430.00</p>
+						<p class="price">￥219.00</p>
+					</li>
+					<li class="list-sum"><p class="sum-price">￥219.00</p></li>
+					<li class="list-operation">
+						<div class="btn-operation">
+							<a href="javascript:;" class="btn-del">删除</a>
+							<a href="javascript:;" class="btn-col">收藏</a>
+						</div>
+					</li>					
+				</ul>
+			</div>
+		</div>
+		<div class="cart-box">
+			<div class="shop-info">
+				<div class="all-check">
+					<input type="checkbox" id="shop1" class="shop-check" />
+					<label for="shop0">
+						<img src="../Public/images/gold-seller.png" />
+						店铺：
+					</label>
+					<a href="#">迪曼斯家纺直销店</a>
+				</div>
+				<div class="shop-name"></div>
+			</div>
+			<div class="cart-content">
+				<ul class="cart-list">
+					<li class="list-chk">
+						<input type="checkbox" id="checkBox3" class="goods-check" style="display: inline-block;" />
+					</li>
+					<li class="list-msg">
+						<div class="list-img">
+							<a href="javascript:;">
+								<img src="../Public/images/dimansi.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-des">
+							<p class="p-info">
+								<a href="javascript:;">纯棉磨毛水晶绒四件套床笠款加厚珊瑚绒四件套法兰绒</a>
+							</p>
+							<p class="p-type">适用床尺寸：2.0m（6.6英寸）床</p>
+							<p class="p-color">颜色分类：青春</p>
+						</div>
+					</li>
+					<li class="list-amount">
+						<div class="amount-box">
+							<a href="javascript:;" class="reduce reSty">-</a>
+							<input type="text" value="1" class="sum">
+							<a href="javascript:;" class="add">+</a>
+						</div>						
+					</li>
+					<li class="list-price">						
+						<p class="non-discount">￥378.00</p>
+						<p class="price">￥189.00</p>
+					</li>
+					<li class="list-sum"><p class="sum-price">￥189.00</p></li>
+					<li class="list-operation">
+						<div class="btn-operation">
+							<a href="javascript:;" class="btn-del">删除</a>
+							<a href="javascript:;" class="btn-col">收藏</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="cart-list list-void">
+					<li class="list-chk">
+						<a href="javascript:;" title="" target="_blank" class="goods-void">失效</a>
+					</li>
+					<li class="list-msg">
+						<div class="list-img">
+							<a href="javascript:;">
+								<img src="../Public/images/dimansi.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-des">
+							<p class="p-info">
+								<a href="javascript:;">纯棉磨毛水晶绒四件套床笠款加厚珊瑚绒四件套法兰绒</a>
+							</p>
+							<p class="p-type">适用床尺寸：1.0m（6.6英寸）床</p>
+							<p class="p-color">颜色分类：青春</p>
+						</div>
+					</li>
+					<li class="list-amount">
+						<div class="amount-box">
+							<a href="javascript:;" class="reduce reSty">-</a>
+							<input type="text" value="1" class="sum">
+							<a href="javascript:;" class="add">+</a>
+						</div>						
+					</li>
+					<li class="list-price">	
+						<p class="non-discount">￥358.00</p>
+						<p class="price">￥169.00</p>
+					</li>
+
+					<li class="list-sum"><p class="sum-price">￥169.00</p></li>
+					<li class="list-operation">
+						<div class="btn-operation">
+							<a href="javascript:;" class="btn-del">删除</a>
+							<a href="javascript:;" class="btn-col">收藏</a>
+						</div>
+					</li>					
+				</ul>
+			</div>
+		</div>			
+		<div class="cart-box">
+			<div class="shop-info">
+				<div class="all-check">
+					<input type="checkbox" id="shop1" class="shop-check" />
+					<label for="shop0">
+						<img src="../Public/images/tianmao-icon.png" />
+						店铺：
+					</label>
+					<a href="#">欣伊鑫蓓蕾专卖店</a>
+				</div>
+				<div class="shop-name"></div>
+			</div>
+			<div class="cart-content">
+				<ul class="cart-list">
+					<li class="list-chk">
+						<input type="checkbox" id="checkBox3" class="goods-check" style="display: inline-block;" />
+					</li>
+					<li class="list-msg">
+						<div class="list-img">
+							<a href="javascript:;">
+								<img src="../Public/images/xinyi.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-des">
+							<p class="p-info">
+								<a href="javascript:;">欣伊 简约餐垫西餐垫欧式长方形隔热垫防油PVC厨房杯垫碗垫创意</a>
+							</p>
+							<p class="p-color">颜色分类：仿麻色（蓝条）</p>
+						</div>
+					</li>
+					<li class="list-amount">
+						<div class="amount-box">
+							<a href="javascript:;" class="reduce reSty">-</a>
+							<input type="text" value="1" class="sum">
+							<a href="javascript:;" class="add">+</a>
+						</div>						
+					</li>
+					<li class="list-price">						
+						<p class="non-discount">￥14.8.00</p>
+						<p class="price">￥7.20</p>
+						<div class="promotion">
+							<span>卖家促销</span>
+							<div class="proSlidedown">
+								<p class="newPro">卖家促销：抢购价</p>
+								<p>优惠：￥7.60</p>
+							</div>	
+						</div>					
+					</li>
+					<li class="list-sum"><p class="sum-price">￥7.60</p></li>
+					<li class="list-operation">
+						<div class="btn-operation">
+							<a href="javascript:;" class="btn-del">删除</a>
+							<a href="javascript:;" class="btn-col">收藏</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="cart-box">
+			<div class="shop-info">
+				<div class="all-check">
+					<input type="checkbox" id="shop1" class="shop-check" />
+					<label for="shop0">
+						<img src="../Public/images/tianmao-icon.png" />
+						店铺：
+					</label>
+					<a href="#">张君雅小妹妹旗舰</a>
+				</div>
+				<div class="shop-name"></div>
+			</div>
+			<div class="cart-content">
+				<ul class="cart-list">
+					<li class="list-chk">
+						<input type="checkbox" id="checkBox3" class="goods-check" style="display: inline-block;" />
+					</li>
+					<li class="list-msg">
+						<div class="list-img">
+							<a href="javascript:;">
+								<img src="../Public/images/zhangjunya.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-des">
+							<p class="p-info">
+								<a href="javascript:;">张君雅小妹妹12包进口零食大礼包甜甜圈干脆面点心面零食组合正品</a>
+							</p>
+							<p class="p-type">口味：12包零食组合</p>
+						</div>
+					</li>
+					<li class="list-amount">
+						<div class="amount-box">
+							<a href="javascript:;" class="reduce reSty">-</a>
+							<input type="text" value="1" class="sum">
+							<a href="javascript:;" class="add">+</a>
+						</div>						
+					</li>
+					<li class="list-price">						
+						<p class="non-discount">￥79.00</p>
+						<p class="price">￥35.90</p>
+					</li>
+					<li class="list-sum"><p class="sum-price">￥35.90</p></li>
+					<li class="list-operation">
+						<div class="btn-operation">
+							<a href="javascript:;" class="btn-del">删除</a>
+							<a href="javascript:;" class="btn-col">收藏</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="cart-list list-void">
+					<li class="list-chk">
+						<a href="javascript:;" title="" target="_blank" class="goods-void">失效</a>
+					</li>
+					<li class="list-msg">
+						<div class="list-img">
+							<a href="javascript:;">
+								<img src="../Public/images/zhangjunya.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-des">
+							<p class="p-info">
+								<a href="javascript:;">张君雅小妹妹12包进口零食大礼包甜甜圈干脆面点心面零食组合正品</a>
+							</p>
+							<p class="p-type">口味：12包零食组合</p>
+						</div>
+					</li>
+					<li class="list-amount">
+						<div class="amount-box">
+							<a href="javascript:;" class="reduce reSty">-</a>
+							<input type="text" value="1" class="sum">
+							<a href="javascript:;" class="add">+</a>
+						</div>						
+					</li>
+					<li class="list-price">	
+						<p class="non-discount">￥79.00</p>
+						<p class="price">￥23.90</p>
+					</li>
+
+					<li class="list-sum"><p class="sum-price">￥23.90</p></li>
+					<li class="list-operation">
+						<div class="btn-operation">
+							<a href="javascript:;" class="btn-del">删除</a>
+							<a href="javascript:;" class="btn-col">收藏</a>
+						</div>
+					</li>					
+				</ul>
+				<ul class="cart-list">
+					<li class="list-chk">
+						<input type="checkbox" id="checkBox5" class="goods-check" style="display: inline-block;" />
+					</li>
+					<li class="list-msg">
+						<div class="list-img">
+							<a href="javascript:;">
+								<img src="../Public/images/zhangjunya.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-des">
+							<p class="p-info">
+								<a href="javascript:;">张君雅小妹妹12包进口零食大礼包甜甜圈干脆面点心面零食组合正品</a>
+							</p>
+							<p class="p-type">口味：12包零食组合</p>
+						</div>
+					</li>
+					<li class="list-amount">
+						<div class="amount-box">
+							<a href="javascript:;" class="reduce reSty">-</a>
+							<input type="text" value="1" class="sum">
+							<a href="javascript:;" class="add">+</a>
+						</div>						
+					</li>
+					<li class="list-price">
+						<p class="non-discount">￥79.00</p>
+						<p class="price">￥49.00</p>
+					</li>
+					<li class="list-sum"><p class="sum-price">￥49.00</p></li>
+					<li class="list-operation">
+						<div class="btn-operation">
+							<a href="javascript:;" class="btn-del">删除</a>
+							<a href="javascript:;" class="btn-col">收藏</a>
+						</div>
+					</li>					
+				</ul>
+			</div>
+		</div>			
+	</div>
+	<div class="cart-toolbar">		
+		<div class="container cart-footer">
+			<div class="footer-left">
+				<ul class="list-inline">
+					<li><a href="javascript:;" class="btn-del-choose">删除选中的商品</a></li>
+					<li>
+						<a href="javascript:;" class="btn-col-choose">加入收藏夹</a>
+						<a href="javascript:;" class="btn-col-ok" style="display: none;">成功移至收藏夹</a>
+					</li>
+					<li><a href="javascript:;" class="btn-void">清除无效商品</a></li>
+				</ul>      	
+			</div>
+			<div class="footer-right">
+				<div class="amount">已选择<strong class="amount-num">0</strong>件商品</div>
+				<div class="sum">总价:<strong class="total-sum">￥0.00</strong></div>
+				<div class="btn-area"><a href="javascript:;" class="btn-sum">去结算</a></div>  
+			</div>
+		</div>
+	</div>
+	<!-- 删除商品自定义模态框 -->
+	<div class="modal-backdrop fade in" style="display: none;"></div>
+	<div class="modal-goodsdel modal-del">
+		<p class="title-del">删除宝贝<span class="closeModal">x</span></p>
+		<p>您确定要删除该宝贝吗</p>
+		<div class="btn-goodsdel btn-modal">
+			<a href="javascript:;" class="btn btn-default btn-sure">确定</a>
+			<a href="javascript:;" class="btn btn-default btn-close">关闭</a>
+		</div>
+	</div>
+	<!-- 删除选中商品自定义模态框 -->
+	<div class="modal-seldel modal-del">
+		<p class="title-del">删除宝贝<span class="closeModal">x</span></p>
+		<p>您确定要删除这些宝贝吗</p>
+		<div class="btn-seldel btn-modal">
+			<a href="javascript:;" class="btn btn-default btn-sure">确定</a>
+			<a href="javascript:;" class="btn btn-default btn-close">关闭</a>
+		</div>
+	</div>
+	<!-- 清除无效商品自定义模态框 -->
+	<div class="modal-voiddel modal-del">
+		<p class="title-del">删除宝贝<span class="closeModal">x</span></p>
+		<p>您确定要删除无效商品吗</p>
+		<div class="btn-voiddel btn-modal">
+			<a href="javascript:;" class="btn btn-default btn-sure">确定</a>
+			<a href="javascript:;" class="btn btn-default btn-close">关闭</a>
+		</div>
+	</div>
+	<style>
+	.backToTop {
+		display: none;
+		width: 18px;
+		line-height: 1.2;
+		padding: 5px 0;
+		background-color: #000;
+		color: #fff;
+		font-size: 12px;
+		text-align: center;
+		position: fixed;
+		_position: absolute;
+		right: 10px;
+		bottom: 100px;
+		_bottom: "auto";
+		cursor: pointer;
+		opacity: .6;
+		filter: Alpha(opacity=60);
+	}
+</style>
+<script>
+	(function() {
+		var $backToTopTxt = "返回顶部", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body"))
+		.text($backToTopTxt).attr("title", $backToTopTxt).click(function() {
+			$("html, body").animate({ scrollTop: 0 }, 120);
+		}), $backToTopFun = function() {
+			var st = $(document).scrollTop(), winh = $(window).height();
+			(st > 0)? $backToTopEle.show(): $backToTopEle.hide();    
+        //IE6下的定位
+        if (!window.XMLHttpRequest) {
+        	$backToTopEle.css("top", st + winh - 166);    
+        }
+    };
+    $(window).bind("scroll", $backToTopFun);
+    $(function() { $backToTopFun(); });
+})();
+</script>
+</body>
+</html>

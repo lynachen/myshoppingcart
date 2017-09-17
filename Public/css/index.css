@@ -1,0 +1,527 @@
+	    /*reset*/
+	    body{
+	    	color:#333;
+	    	font-family:arial;
+	    	font-size: 12px;
+	    	font-family: "Microsoft YaHei",sans-serif;
+	    }
+	    .container {
+	    	padding-right:0;
+	    	padding-left:0
+	    }
+	    .row {
+	    	margin-right: 0;
+	    	margin-left: 0;
+
+	    }
+	    .col-md-1, .col-md-2, .col-md-3, .col-md-4,
+	    .col-md-5, .col-md-6, .col-md-7, .col-md-8,
+	    .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	    	padding-right: 0;
+	    	padding-left: 0;
+	    }
+	    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {padding:0;}
+
+	    input,textarea,select{
+	    	font-size:100%;    
+	    	font-family:inherit;
+	    }
+	    body,h1,h2,h3,h4,h5,h6,p,ul,ol,form{
+	    	margin:0;
+	    }
+	    h4,h5,h6{
+	    	font-size:1em;
+	    }
+	    ul,ol{
+	    	padding-left:0; 
+	    	list-style-type:none;
+	    }
+
+	    img{border:0;}
+	    a {
+	    	text-decoration: none;
+	    	color: #333;
+	    }
+	    a:link,
+	    a:visited,
+	    a:hover,
+	    a:active {
+	    	text-decoration: none;
+	    }
+
+	    em, i, u {
+	    	font-style: normal;
+	    }
+	    ::-moz-placeholder {font-size:16px;color: #999;}
+	    :-ms-input-placeholder {font-size:16px;color: #999;}
+	    ::-webkit-input-placeholder {font-size:16px;color: #999;}
+	    label.error {
+	    	background-image:url(../images/detail/error.png);
+	    	background-repeat: no-repeat;
+	    }
+
+	    .table {margin-bottom: 0;}
+
+	    .list-inline {
+	    	margin-left: 0;
+
+	    }
+	    .list-inline > li {padding-right: 0;padding-left: 0;}
+	    .main {
+	    	width: 100%;
+	    }
+
+
+  /*site-nav的nav部分*/
+  .nav-left, .nav-right, .nav-shopcart-nav{
+  	list-style:none;
+  }
+
+  .nav-left .nav-logo,.nav-left .nav-account,.nav-left .nav-msg,
+  .nav-right .nav-myTao,.nav-right .nav-cart,.nav-right .nav-collection,.nav-right .nav-list,.nav-right .nav-sellCenter,.nav-right .nav-contact,.nav-right .nav-web,.nav-shopcart-nav a{
+  	text-decoration:none;
+  	color:#6c6c6c;
+  }
+
+  .nav-left .nav-msg:hover{
+  	cursor:auto;     
+  }
+  .nav-right .nav-myTao:hover,.nav-right .nav-cart:hover,.nav-right .nav-collection:hover,.nav-right .nav-list:hover,.nav-right .nav-sellCenter:hover,.nav-right .nav-contact:hover,.nav-right .nav-web:hover{
+  	color: #ff3e00;
+  }
+  .nav-right .nav-myTao:after,.nav-right .nav-cart:after,.nav-right .nav-collection:after,.nav-right .nav-sellCenter:after,.nav-right .nav-contact:after,.nav-right .nav-web:after{
+  	content: "";
+  	border: 4px solid transparent;
+  	border-top-color: #6c6c6c;
+  	display: inline-block;
+  	position: relative;
+  	margin-left: 4px;
+  }
+
+  .site-nav {
+  	background: #f5f5f5 scroll no-repeat 0 0;
+  	width: 100%;
+  	border-bottom: 1px solid #eee;
+  }
+
+  .nav {
+  	margin: 0 auto;
+  	height: 35px;
+  	line-height: 35px;
+  }
+
+  .nav-left {
+  	float: left;
+  }
+  .nav-left li {
+  	float: left;
+  	padding: 0 10px;
+  }
+
+  .nav-left a.nav-logo::before{
+  	content:url("../images/taobao-logo.png");
+  	margin-left:0;
+  }
+  .nav-left a.nav-msg::before {
+  	content: url("../images/msg-red.png");
+  	margin-right: 4px;
+  }
+
+  .nav-right {
+  	float: right;
+  }
+  .nav-right li {
+  	float: left;
+  }
+
+  .nav-right a {
+  	display: block;
+  	padding: 0 15px;
+  }
+
+  .nav-shopcart-nav {
+  	display: none;
+  	padding: 8px 0;
+  	z-index: 2;    
+  	position: absolute;
+  	background-color: #fff;
+  	border: 1px solid #eee;
+  	border-top-width: 0;
+  }
+
+  .nav ul li:hover ul{
+  	display:block;        /*两个display属性让下拉菜单显示和隐藏*/
+  }
+
+  .nav-shopcart-nav a {
+  	float:none;  /* ul a继承了原本的 float：left，样式会乱，所以需要改变样式;*/
+  	display: block;
+  	line-height: 28px;
+  	padding: 0 12px;
+  }
+
+  .nav-shopcart-nav a:hover {
+  	color: #6c6c6c;
+  	background-color: #f5f5f5;
+  }
+  .nav-right a.nav-cart::before{
+  	content:url("../images/taobao-cart.png");
+  	margin-right: 5px;
+  }
+  .nav-right a.nav-collection::before {
+  	content: url("../images/star-gray.png");
+  	margin-right: 5px;
+  }
+  .nav-right a.nav-collection:hover::before {
+  	content: url("../images/star-orange.png");
+  }
+
+  /*header部分*/
+  .header {
+  	margin: 0 auto;
+  	padding: 20px 0 40px;
+  }
+
+  .header a {
+  	display: block;
+  	float: left;
+  }
+
+  .header a::before {
+  	content: url("../images/taobao-icon.png");
+  }
+
+  .header-search {
+  	float: right;
+  	position: relative;
+  }
+
+  .header-search .header-search-text {
+  	float: left;
+  	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+  	width: 400px;
+  	height: 35px;
+  	border: 3px solid #ff5000;
+  	padding-left: 8px;
+  	font-size: 1.3em;
+  }
+
+  .header-search .header-search-btn {
+  	float: left;
+  	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+  	height: 35px;
+  	color: #fff;
+  	margin-left: -1px;
+  	width: 90px;
+  	border: 0;
+  	background-color: #FF4400;
+  	font-size: 1.6em;
+  }
+
+  /*-----购物车页面：Shopping/cart.html-----*/
+
+  /*cart-title*/
+/*	    	.checkbox-wrap {
+	    		width: 20px;
+	    		height: 20px;
+	    		float: left;
+	    		cursor: pointer;
+	    		margin-left: 10px;
+	    		text-align: center;
+	    		background-image: url(../images/sel.png);
+	    		background-repeat: no-repeat;
+	    		background-position: 0 0;
+	    		}*/
+	    		input[type=checkbox] {  
+	    			position: relative; 
+	    			margin-right: 10px; 
+	    			width: 10px;  
+	    			height: 1px;  
+	    		}  
+	    		input[type=checkbox]::before{  
+	    			content:'';  
+	    			position: absolute;  
+	    			top: -11px;  
+	    			left: 0;  
+	    			width: 12px;  
+	    			height: 12px; 
+	    			border:1px solid #ccc; 
+	    			line-height:22px;  
+	    			text-align: center;  
+	    			color:white;  
+	    			font-size:16px;  
+	    			background-color:#fff;   
+	    		}  
+	    		input[type=checkbox]:checked::before {  
+	    			background:url("../images/sel.png") no-repeat;
+	    		} 
+
+	    		.all-check > label {
+	    			font-size: 14px;
+	    			color: #666;
+	    			font-weight: 500;
+	    		}
+	    		div.cart-title > h2 {
+	    			display: inline-block;
+	    			font-size: 18px;
+	    			color: #ff4400;
+	    			border-bottom: 2px solid #ff4400;
+	    			padding-bottom: 6px;
+	    			margin-bottom: 0;
+	    		}
+
+	    		/*cart-main*/
+	    		/*csrt-head*/
+	    		.cart-head {
+	    			width: 100%;
+
+	    			margin-top: 10px;
+	    		}
+	    		.cart-main .cart-box:last-child {margin-bottom: 150px;}
+	    		.cart-box .cart-list {
+	    			padding-left:10px;
+	    			padding-top: 20px;
+	    			width: 100%;
+	    			height: 130px;
+	    			border-top:1px solid #e5e5e5;
+	    		}
+	    		.cart-box .cart-list li {float: left;height: 100%;}
+	    		.cart-box .cart-list li.list-chk {width: 30px;}
+	    		.cart-box .list-price .non-discount {text-decoration: line-through;color: #9c9c9c;}
+	    		.cart-box .list-price .promotion {	    			
+	    			height: 23px;
+	    			line-height: 21px;
+	    			width: 80px;
+	    			margin: 0 auto;
+	    			border: 1px solid #FFE1D3;
+	    			border-radius: 3px;
+	    			text-align: center;
+	    			background-color: #FFF0E7;
+	    			color: #FF4400;
+	    			text-align: center;
+	    			position: relative;
+	    		}
+
+	    		.cart-box .list-price .proSlidedown {
+	    			width: 120px;
+	    			padding: 10px;
+	    			margin-left: -10px;
+	    			border: 1px solid #ccc;
+	    			background-color: #fff;
+	    			display: none;
+	    			position: absolute;
+	    			box-shadow: 2px 2px 3px #f4f4f4;
+	    			top: 22px;
+	    			left: 10px;
+	    		}
+
+	    		.cart-head .cart-list {
+	    			height: 44px;
+	    			line-height: 44px;
+	    			padding-left: 20px;
+	    			background-color: #f5f5f5;
+	    		}
+	    		.cart-head .cart-list li {color: #999;}
+	    		.cart-list li:not(.list-chk) {text-align: center;}
+	    		.cart-head .list-chk {width: 10%;}
+	    		/*.cart-box .list-chk {width: 5%;}*/
+	    		.cart-head .list-price {width: 20%;}
+	    		.cart-head .list-sum {width: 10%;}
+	    		.cart-head .list-operation {width: 15%;}
+	    		.list-amount,.list-price,.list-sum {width: 14.8%;}
+	    		.list-operation {width: 13%;}
+	    		.cart-head .list-msg {width: 28%;}
+	    		.cart-box .list-msg {width: 40%;}
+	    		.list-void {
+	    			background-color: #f0f0f0;    
+	    			pointer-events: none;
+	    			cursor: default;
+	    			opacity: 0.6;
+	    		}
+	    		.list-void .goods-void {background-color: #dadada;color: #5f5f5f;}
+	    		/*cart-box*/
+	    		.cart-main {border-top: 2px solid #f0f0f0;}
+	    		.cart-main .cart-box {
+	    			border: 1px solid #e5e5e5;
+	    			margin-top: 20px;
+	    			margin-bottom: 20px;
+	    		}
+	    		.cart-main .cart-box .shop-info {
+	    			height: 40px;
+	    			line-height: 40px;
+	    			padding-right: 10px;
+	    			padding-left: 10px;	    	
+	    			background-color: #fafafa;
+	    		}
+	    		.list-msg div {display: inline-block;}
+	    		.list-msg .list-img {float: left;}
+	    		.list-msg .list-img img {width: 100px;height: 100px;border:1px solid #e5e5e5;}
+	    		.list-msg .list-des {float: right;width: 78%;}
+	    		.list-msg .list-des p {
+	    			text-align: left;
+	    			width: 90%;
+	    			margin-left: 10px;
+	    			color: #999;
+	    			margin-bottom: 5px;
+	    		}
+	    		.list-msg .list-des p.info a {color: #333;}
+	    		.btn-operation a:hover {color: #ff0213}
+	    		.btn-operation a.btn-del {
+	    			padding-right: 10px;
+	    			border-right: 1px solid #666;
+	    		}
+	    		.btn-operation a.btn-col {
+	    			display: inline-block;
+	    			/*padding-left: 5px;*/
+	    			width: 40px;
+	    		}
+	    		.btn-operation .btn-col.highlight {color: #ff0213;}
+	    		.amount-box {width:100px;border:1px solid #e5e5e5;background-color: #fff;}
+	    		.amount-box input {
+	    			width: 50px;
+	    			height: 25px;
+	    			line-height: 25px;
+	    			border: 1px solid transparent;
+	    			color: #343434;
+	    			text-align: center;
+	    			z-index: 2;
+	    		}
+
+	    		.amount-box a {
+	    			display: inline-block;
+	    			height: 25px;
+	    			line-height: 22px;
+	    			width: 20px;
+	    			text-align: center;
+	    			color: #444;
+	    		}
+	    		.amount-box .reduce {border-right: 1px solid #e5e5e5;}
+	    		.amount-box .add {border-left: 1px solid #e5e5e5;}
+	    		.amount-box .reSty {color: #cbcbcb;}
+	    		.amount-box .reSty:hover {
+	    			border-right: none;
+	    			border-color: #e5e5e5;
+	    			text-decoration: none;
+	    			color: #cbcbcb;
+	    		}
+	    		.list-price > .price {
+	    			font-size: 14px;
+	    			color: #666;
+	    		}
+	    		.list-sum > .sum-price {
+	    			font-size: 14px;
+	    			color: #333;
+	    			font-weight: 700;
+	    		}
+	    		.cart-toolbar {
+	    			position: fixed;
+	    			height: 56px;
+	    			line-height: 56px;
+	    			bottom:0;
+	    			text-align: center;	    		
+	    			width: 100%;
+	    		}
+	    		.cart-footer {
+	    			background-color: #f0f0f0;
+	    			height: 60px;
+	    			line-height: 60px;	    		
+	    			/*margin-top:50px;*/
+	    			text-align: center;
+	    			position: relative;
+	    		}
+	    		.footer-left {float: left;padding-left: 30px;}
+	    		.footer-right {float: right;}
+	    		.footer-right div {
+	    			display: inline-block;
+	    			width: 150px;
+	    			color: #666;
+	    		}
+	    		.footer-right .amount-num {color: #ff0213;padding-right:3px;padding-left: 3px;}
+	    		.footer-right .total-sum{font-size:18px;color: #ff0213;padding-left: 3px;}
+	    		.footer-right .btn-area {width: 120px;}
+	    		.footer-right .btn-sum {
+	    			display: inline-block;
+	    			width: 120px;
+	    			background-color: #b0b0b0;
+	    			color: #fff;
+	    			font-size: 18px;
+	    			text-align: center; 
+	    			cursor: not-allowed;
+	    		}
+
+	    		.btn-area a.btn-sty{
+	    			background-color: #ff0213;
+	    			cursor: pointer;
+	    		}
+	    		.footer-left li {padding-right: 50px;}
+	    		.footer-left li a {color: #666;}
+	    		.footer-left li a:hover {color: #ff0213;}
+	    		.footer-left li.none {display: none;margin-left: -50px;}
+	    		.footer-left a.btn-col-ok {
+	    			border: 1px solid #f10213;
+	    			color: #f10213;
+	    			padding: 5px 5px 5px 23px;
+	    			background: url(../images/succeed.png) no-repeat left center;
+	    			background-size: 20px 20px;
+	    		}
+	    		.footer-left div {float: right;}
+	    		label.mark {background: url("images/mark1.png") no-repeat -1px -1px;}
+
+
+	    		/*自定义模态框样式*/
+	    		.title-del {
+	    			font-size: 14px;
+	    			color: #333;
+	    			margin-bottom: 24px;
+	    		}
+	    		.modal-del {
+	    			position: fixed;
+	    			display: none;
+	    			top: 30%;
+	    			left: 40%;
+	    			z-index: 9999;
+	    			width: 374px;
+	    			height: 150px;
+	    			border: 1px solid #e6e6e6;
+	    			border-radius: 3px;
+	    			padding: 24px 30px;
+	    			background-color: #fff;
+	    		}
+	    		.modal-del .closeModal {
+	    			font-size: 24px;
+	    			float: right;
+	    			margin-top: -18px;
+	    			color: #666;
+	    			cursor: pointer;
+	    		}
+	    		.btn-modal {margin-top: 20px;}
+	    		.btn-modal a {
+	    			width: 60px;
+	    			height: 30px;
+	    			line-height: 30px;
+	    			padding:0;
+	    			background-color: #52a0e5;
+	    			border-color: transparent;
+	    			border-radius: 2px;
+	    			color: #fff;
+	    			letter-spacing: 2px;
+	    			margin-right: 10px;
+	    		}
+	    		.btn-modal a.btn-close {
+	    			background-color: #fff;
+	    			border:1px solid #dbdbdb;
+	    			color: #333;
+	    		}
+	    		.btn-modal .btn-sure:hover,
+	    		.btn-modal .btn-sure:focus,
+	    		.btn-modal .btn-sure.focus,
+	    		.btn-modal .btn-sure:active,
+	    		.btn-modal .btn-sure.active {
+	    			color: #fff;
+	    			background-color: #52a0e5;
+	    			border-color: transparent;
+	    		}	    
